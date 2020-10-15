@@ -1,13 +1,14 @@
 package chess_game;
 
-import boardgame.Board;
+import chess.ChessMath;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
-		Board board = new Board(8, 8);
+		ChessMath chessMath = new ChessMath();
+		UI.printBoard(chessMath.getPieces());
 
-	}
+	}	
 
 }
